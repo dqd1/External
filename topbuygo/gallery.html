@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+  <meta charset="UTF-8" />
+  <title>Topbuygo Photo Gallery</title>
+  <style>
+    body {
+      font-family: sans-serif;
+      text-align: center;  /* 标题居中 */
+      padding: 20px;
+    }
+    .gallery-wrapper {
+      display: inline-block;  /* 宽度自适应 */
+      max-width: 940px;  /* 10张90px宽图片+间距 */
+      text-align: left;  /* 图片靠左 */
+    }
+    .image-container {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: flex-start;  /* 图片靠左排列 */
+      gap: 10px;
+    }
+    .image-container img {
+      width: 90px;
+      height: auto;
+      border: 1px solid #ccc;
+      border-radius: 8px;
+      box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+      flex-shrink: 0;
+    }
+  </style>
+</head>
+<body>
+  <h1>Topbuygo Photo Gallery</h1>
+
+  <div class="gallery-wrapper">
+    <div class="image-container">
+      <img src="image/logo1.png" alt="logo1" />
+      <img src="image/logo2.png" alt="logo2" />
+      <img src="image/1688.png" alt="1688" />
+      <img src="image/jingdong.png" alt="jingdong" />
+      <img src="image/taobao.png" alt="taobao" />
+      <img src="image/xianyu.png" alt="xianyu" />
+    </div>
+  </div>
+</body>
+</html>
